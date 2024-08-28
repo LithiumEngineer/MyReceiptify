@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-select .ant-select-arrow {
+    color: rgb(0, 0, 0, 1);
+}
+
+.custom-select .ant-select-dropdown {
+    min-width: 300px !important; 
+}
+
+.custom-select .ant-select-selection-item {
+    text-align: center; 
+}
+
+.ant-dropdown,
+.ant-dropdown-menu,
+.ant-dropdown-menu-item {
+    border-radius: 5px !important;
+    padding: 4px !important;
+}
