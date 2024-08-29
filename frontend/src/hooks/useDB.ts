@@ -13,7 +13,7 @@ export const useDB = () => {
         try {
             const token = await getAccessTokenSilently();
             const response = await fetch(
-                `${process.env.NEXT_PUBLIC_API_URL}/upload`,
+                `${process.env.NEXT_PUBLIC_API_URL}/api/upload`,
                 {
                     method: "POST",
                     headers: {
@@ -41,7 +41,7 @@ export const useDB = () => {
         try {
             const token = await getAccessTokenSilently();
             const response = await fetch(
-                `${process.env.NEXT_PUBLIC_API_URL}/receipts/${user.sub}`,
+                `${process.env.NEXT_PUBLIC_API_URL}/api/receipts/${user.sub}`,
                 {
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -81,7 +81,7 @@ export const useDB = () => {
 
             console.log("start")
             const response = await fetch(
-                `${process.env.NEXT_PUBLIC_API_URL}/receipts/${id}`,
+                `${process.env.NEXT_PUBLIC_API_URL}/api/receipts/${id}`,
                 {
                     method: "PUT",
                     headers: {
@@ -109,7 +109,7 @@ export const useDB = () => {
         try {
             const token = await getAccessTokenSilently();
             const response = await fetch(
-                `${process.env.NEXT_PUBLIC_API_URL}/receipts/${id}`,
+                `${process.env.NEXT_PUBLIC_API_URL}/api/receipts/${id}`,
                 {
                     method: "DELETE",
                     headers: {
