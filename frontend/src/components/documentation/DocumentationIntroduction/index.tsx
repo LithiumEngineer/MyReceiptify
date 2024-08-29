@@ -9,8 +9,8 @@ const DocumentationIntroduction = () => {
                 <p className="text-slate-600 mt-4 leading-7">
                     Receiptify™ is your all-in-one platform for personal
                     financing. Upload receipts in just one click, and by
-                    leveraging OpenCV&apos;s powerful computer vision library, the
-                    app will automatically scan your receipt to collect
+                    leveraging OpenCV&apos;s powerful computer vision library,
+                    the app will automatically scan your receipt to collect
                     spendings to generate comprehensive spending reports. The
                     app also provides AI-powered personalized spending tips
                     tailored to your spending habits (coming soon) to help you
@@ -63,6 +63,11 @@ const DocumentationIntroduction = () => {
                         <li>
                             A Receiptify API that allows the development of
                             third-party applications
+                        </li>
+                        <li>
+                            In the process of migrating the python/flask backend
+                            to AWS Lambda to drastically improve performance and
+                            reduce latency
                         </li>
                         <li>Major UI improvements such as dark mode!</li>
                     </ul>

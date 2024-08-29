@@ -29,11 +29,6 @@ const DocumentationRelease = () => {
                             requires some work before it is fully ready for
                             third-party usage
                         </li>
-                        <li>
-                            In the process of migrating the python/flask backend
-                            to AWS Lambda to drastically improve performance and
-                            reduce latency
-                        </li>
                     </ul>
                 </p>
             </div>
