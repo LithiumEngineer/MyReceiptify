@@ -20,14 +20,19 @@ const DocumentationRelease = () => {
                         </li>
                         <li>
                             The user dashboard provides a comprehensive report
-                            of a user&apos;s weekly, monthly, and yearly spendings
-                            through widgets
+                            of a user&apos;s weekly, monthly, and yearly
+                            spendings through widgets
                         </li>
                         <li>Users may edit past receipt names or items</li>
                         <li>
                             Server API has been set up, although it still
                             requires some work before it is fully ready for
                             third-party usage
+                        </li>
+                        <li>
+                            In the process of migrating the python/flask backend
+                            to AWS Lambda to drastically improve performance and
+                            reduce latency
                         </li>
                     </ul>
                 </p>
