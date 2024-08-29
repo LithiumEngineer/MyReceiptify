@@ -27,3 +27,4 @@ export const Auth0ProviderWithHistory: FC<Auth0ProviderWithHistoryProps> = ({
         </Auth0Provider>
     );
 };
+
