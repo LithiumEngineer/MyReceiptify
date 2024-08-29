@@ -66,8 +66,8 @@ const DocumentationIntroduction = () => {
                         </li>
                         <li>
                             Migrating the Computer Vision Python/Flask backend
-                            to AWS Lambda to improve performance and
-                            reduce latency
+                            to AWS Lambda to improve performance and reduce
+                            latency
                         </li>
                         <li>Major UI improvements such as dark mode!</li>
                     </ul>
