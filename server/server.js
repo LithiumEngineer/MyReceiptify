@@ -29,11 +29,11 @@ mongoose
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection failed: ", err))
 
-app.get("/", (req, res) => {
-  res.send("API running...")
+app.get("/api/test", (req, res) => {
+  res.send("Server is running!")
 })
 
-app.post("/upload", async (req, res) => {
+app.post("/api/upload", async (req, res) => {
   const { userId, items } = req.body
 
   if (!userId || !Array.isArray(items)) {
@@ -55,7 +55,7 @@ app.post("/upload", async (req, res) => {
   }
 })
 
-app.get("/receipts/:userId", async (req, res) => {
+app.get("/api/receipts/:userId", async (req, res) => {
   const { userId } = req.params
   try {
     const receipts = await Receipt.find({ userId })
@@ -65,7 +65,7 @@ app.get("/receipts/:userId", async (req, res) => {
   }
 })
 
-app.put("/receipts/:id", async (req, res) => {
+app.put("/api/receipts/:id", async (req, res) => {
   const { id } = req.params
   const { userId, items, date, name } = req.body
 
@@ -84,7 +84,7 @@ app.put("/receipts/:id", async (req, res) => {
   }
 })
 
-app.delete("/receipts/:id", async (req, res) => {
+app.delete("/api/receipts/:id", async (req, res) => {
   const { id } = req.params
 
   try {
@@ -102,3 +102,5 @@ app.delete("/receipts/:id", async (req, res) => {
 
 const PORT = process.env.PORT || 3001
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))
+
+module.exports = app
