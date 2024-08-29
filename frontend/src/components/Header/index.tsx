@@ -29,7 +29,13 @@ const Header: FC<HeaderProps> = ({ onAddReceipt }) => {
             <div className="mx-1 h-[1px] bg-slate-200"></div>
             <div
                 className="px-4 py-2 bg-whte hover:bg-slate-100 hover:cursor-pointer active:bg-slate-200"
-                onClick={() => logout()}
+                onClick={() =>
+                    logout({
+                        logoutParams: {
+                            returnTo: `${window.location.origin}`,
+                        },
+                    })
+                }
             >
                 Log out
             </div>
