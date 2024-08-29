@@ -65,8 +65,8 @@ const DocumentationIntroduction = () => {
                             third-party applications
                         </li>
                         <li>
-                            In the process of migrating the python/flask backend
-                            to AWS Lambda to drastically improve performance and
+                            Migrating the Computer Vision Python/Flask backend
+                            to AWS Lambda to improve performance and
                             reduce latency
                         </li>
                         <li>Major UI improvements such as dark mode!</li>
