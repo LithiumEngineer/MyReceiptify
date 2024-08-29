@@ -135,6 +135,7 @@ const Sidebar: FC<SidebarProps> = ({
                                         {[...receipts].reverse().map((r) => {
                                             return (
                                                 <SidebarItem
+                                                    key={r._id}
                                                     type={HeaderItemType.Button}
                                                     text={
                                                         r?.name

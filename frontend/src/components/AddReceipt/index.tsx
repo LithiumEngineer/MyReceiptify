@@ -1,5 +1,5 @@
 import { useDB } from "@/hooks/useDB";
-import { Category, ItemProps, ReceiptProps } from "@/types/types";
+import { Category, ItemProps } from "@/types/types";
 import { DeleteOutlined, PlusOutlined } from "@ant-design/icons";
 import { Input, InputNumber, Select } from "antd";
 import { Poppins } from "next/font/google";
@@ -82,10 +82,13 @@ const AddReceipt: FC<UploadImageProps> = ({ onDashboard }) => {
                 const formData = new FormData();
                 formData.append("image", file);
 
-                const res = await fetch("http://127.0.0.1:5000/upload", {
-                    method: "POST",
-                    body: formData,
-                });
+                const res = await fetch(
+                    `${process.env.NEXT_PUBLIC_PYTHON_BACKEND_URL}/upload`,
+                    {
+                        method: "POST",
+                        body: formData,
+                    }
+                );
 
                 const data = await res.json();
                 const items = data.items.map((item: string[]) => {
@@ -225,7 +228,10 @@ const AddReceipt: FC<UploadImageProps> = ({ onDashboard }) => {
                                 </div>
                                 {items.map((item, idx) => {
                                     return (
-                                        <div className="h-fit w-full flex justify-between space-x-3 mb-2">
+                                        <div
+                                            key={idx}
+                                            className="h-fit w-full flex justify-between space-x-3 mb-2"
+                                        >
                                             <Input
                                                 value={item.name}
                                                 placeholder="Name"

@@ -20,7 +20,7 @@ const DocumentationRelease = () => {
                         </li>
                         <li>
                             The user dashboard provides a comprehensive report
-                            of a user's weekly, monthly, and yearly spendings
+                            of a user&apos;s weekly, monthly, and yearly spendings
                             through widgets
                         </li>
                         <li>Users may edit past receipt names or items</li>

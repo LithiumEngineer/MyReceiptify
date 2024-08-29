@@ -135,7 +135,10 @@ const EditReceipt: FC<EditReceiptProps> = ({ receiptId }) => {
                             </div>
                             {receipt.items.map((item, idx) => {
                                 return (
-                                    <div className="h-fit w-full flex justify-between space-x-3 mb-2">
+                                    <div
+                                        key={idx}
+                                        className="h-fit w-full flex justify-between space-x-3 mb-2"
+                                    >
                                         <Input
                                             value={item.name}
                                             placeholder="Name"

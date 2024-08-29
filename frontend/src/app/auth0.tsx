@@ -1,7 +1,13 @@
 import { Auth0Provider } from "@auth0/auth0-react";
-import React from "react";
+import { FC, ReactNode } from "react";
 
-export const Auth0ProviderWithHistory = ({ children }) => {
+interface Auth0ProviderWithHistoryProps {
+    children: ReactNode;
+}
+
+export const Auth0ProviderWithHistory: FC<Auth0ProviderWithHistoryProps> = ({
+    children,
+}) => {
     const domain = process.env.NEXT_PUBLIC_AUTH0_DOMAIN || "";
     const clientId = process.env.NEXT_PUBLIC_AUTH0_CLIENT_ID || "";
 

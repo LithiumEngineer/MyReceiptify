@@ -9,7 +9,7 @@ const DocumentationIntroduction = () => {
                 <p className="text-slate-600 mt-4 leading-7">
                     Receiptify™ is your all-in-one platform for personal
                     financing. Upload receipts in just one click, and by
-                    leveraging OpenCV's powerful computer vision library, the
+                    leveraging OpenCV&apos;s powerful computer vision library, the
                     app will automatically scan your receipt to collect
                     spendings to generate comprehensive spending reports. The
                     app also provides AI-powered personalized spending tips

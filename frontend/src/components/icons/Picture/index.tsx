@@ -1,4 +1,10 @@
-const Picture = ({ className }) => (
+import { FC } from "react";
+
+interface PictureProps {
+    className: string;
+}
+
+const Picture: FC<PictureProps> = ({ className }) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 64 64"
