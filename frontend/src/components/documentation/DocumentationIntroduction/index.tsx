@@ -7,7 +7,7 @@ const DocumentationIntroduction = () => {
             <div className="w-full max-w-[70vw] mt-10">
                 <p className="text-xl font-bold">Welcome to Receiptify!</p>
                 <p className="text-slate-600 mt-4 leading-7">
-                    Receiptify™ is your all-in-one platform for personal
+                    Receiptify is your all-in-one platform for personal
                     financing. Upload receipts in just one click, and by
                     leveraging OpenCV&apos;s powerful computer vision library,
                     the app will automatically scan your receipt to collect
